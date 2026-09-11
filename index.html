@@ -107,71 +107,63 @@
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: Sabores a Elegir (Menú interactivo con CSS puro) -->
+    <!-- SECCIÓN: Sabores a Elegir (Abre y Cierra al hacer Clic) -->
     <section id="sabores" class="flavors section-padding">
         <div class="container">
             <div class="section-title">
-                <h2>Elige tu Sabor Favorito</h2>
+                <h2>Nuestros Sabores</h2>
                 <div class="divider"></div>
-                <p>Presiona el botón para descubrir nuestras deliciosas opciones de bizcocho y relleno</p>
+                <p>Haz clic en cualquier sabor para ver los detalles. Haz clic de nuevo para cerrarlo.</p>
             </div>
             
             <div class="flavor-accordion">
-                <!-- Opción 1 -->
-                <div class="accordion-item">
-                    <input type="radio" name="flavor" id="flavor1" class="accordion-input">
-                    <label for="flavor1" class="accordion-label">
-                        Tres Leches
-                        <span class="icon">+</span>
-                    </label>
-                    <div class="accordion-content">
+                <!-- Opción 1: Tres Leches -->
+                <details class="flavor-item">
+                    <summary class="flavor-header">
+                        <span>Tres Leches</span>
+                        <span class="icon"></span>
+                    </summary>
+                    <div class="flavor-body">
                         <p>Nuestra especialidad de la casa. Un bizcocho esponjoso bañado en nuestra mezcla secreta de tres leches, cubierto con crema batida ligera y un toque de canela. ¡Simplemente irresistible!</p>
                     </div>
-                </div>
-                
-                <!-- Opción 2 -->
-                <div class="accordion-item">
-                    <input type="radio" name="flavor" id="flavor2" class="accordion-input">
-                    <label for="flavor2" class="accordion-label">
-                        Vainilla con Chocolate
-                        <span class="icon">+</span>
-                    </label>
-                    <div class="accordion-content">
+                </details>
+
+                <!-- Opción 2: Vainilla con Chocolate -->
+                <details class="flavor-item">
+                    <summary class="flavor-header">
+                        <span>Vainilla con Chocolate</span>
+                        <span class="icon"></span>
+                    </summary>
+                    <div class="flavor-body">
                         <p>La combinación clásica que nunca falla. Capas de suave bizcocho de vainilla real intercaladas con un rico y cremoso fudge de chocolate artesanal.</p>
                     </div>
-                </div>
-                
-                <!-- Opción 3 -->
-                <div class="accordion-item">
-                    <input type="radio" name="flavor" id="flavor3" class="accordion-input">
-                    <label for="flavor3" class="accordion-label">
-                        Vainilla con tres leches
-                        <span class="icon">+</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p>Lo mejor de dos mundos. La base tradicional de vainilla con la humedad y dulzura característica de nuestro bañado de tres leches. Perfecto para quienes buscan un sabor familiar pero mejorado.</p>
+                </details>
+
+                <!-- Opción 3: Vainilla con tres leches -->
+                <details class="flavor-item">
+                    <summary class="flavor-header">
+                        <span>Vainilla con tres leches</span>
+                        <span class="icon"></span>
+                    </summary>
+                    <div class="flavor-body">
+                        <p>Lo mejor de dos mundos. La base tradicional de vainilla con la humedad y dulzura característica de nuestro bañado de tres leches.</p>
                     </div>
-                </div>
-                
-                <!-- Opción 4 -->
-                <div class="accordion-item">
-                    <input type="radio" name="flavor" id="flavor4" class="accordion-input">
-                    <label for="flavor4" class="accordion-label">
-                        Mixto de sabores
-                        <span class="icon">+</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p>¿No puedes decidirte? ¡Pruébalos todos! Creamos una torta con capas alternadas de nuestros sabores más populares para una experiencia gustativa completa en cada bocado. (Vainilla, Chocolate, y toques de Tres Leches).</p>
+                </details>
+
+                <!-- Opción 4: Mixto de sabores -->
+                <details class="flavor-item">
+                    <summary class="flavor-header">
+                        <span>Mixto de sabores</span>
+                        <span class="icon"></span>
+                    </summary>
+                    <div class="flavor-body">
+                        <p>¿No puedes decidirte? Creamos una torta con capas alternadas de nuestros sabores más populares para una experiencia completa en cada bocado (Vainilla, Chocolate y toques de Tres Leches).</p>
                     </div>
-                </div>
-                
-                <!-- Opción para cerrar (invisible, para cuando se presiona fuera) -->
-                <input type="radio" name="flavor" id="close-acc" class="accordion-close-input" checked>
-                <label for="close-acc" class="accordion-close-label">Cerrar Info</label>
+                </details>
             </div>
 
             <div class="text-center mt-40">
-                <a href="https://wa.me/59175895819?text=¡Hola!%20Me%20interesa%20una%20torta%20de%20sabor:%20..." target="_blank" class="btn btn-primary">Pedir mi Sabor</a>
+                <a href="https://wa.me/59175895819?text=¡Hola!%20Me%20interesa%20consultar%20por%20los%20sabores%20de%20las%20tortas." target="_blank" class="btn btn-primary">Pedir mi Sabor</a>
             </div>
         </div>
     </section>
