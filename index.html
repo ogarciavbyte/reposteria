@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Clavo y Canela | Diseños y Sabores Únicos</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Clavo & Canela</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <!-- CAMBIO: Nombre actualizado en la navegación -->
+                    <li><a href="#galeria">Diseños y Decoración</a></li>
+                    <li><a href="#sabores">Nuestros Sabores</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="sub-title">Repostería Artesanal Personalizada</span>
+            <h1>Creamos la torta de tus sueños con sabor inolvidable</h1>
+            <p>Diseños espectaculares para cada celebración, horneados con el toque perfecto de amor.</p>
+            <div class="hero-buttons">
+                <a href="#galeria" class="btn btn-primary">Ver Diseños</a>
+                <a href="https://wa.me/59175895819?text=¡Hola!%20Quisiera%20cotizar%20una%20torta%20personalizada." target="_blank" class="btn btn-secondary">Cotizar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="about section-padding">
+        <div class="container grid-2">
+            <div class="about-text">
+                <h2>Tu Celebración, Nuestra Pasión</h2>
+                <div class="divider"></div>
+                <p>En <strong>Clavo y Canela</strong>, cada torta es una obra de arte única. Nos especializamos en transformar tus ideas y personajes favoritos en deliciosas realidades para cumpleaños, aniversarios y momentos especiales.</p>
+                <p>Combinamos la mejor decoración creativa con ingredientes frescos y recetas tradicionales para que tu pastel sea el centro de atención.</p>
+            </div>
+            <div class="about-card">
+                <div class="badge">Diseño Personalizado</div>
+                <h3>Decoraciones increíbles y sabor artesanal</h3>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección Galería de Diseños y Decoración -->
+    <section id="galeria" class="gallery section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Diseños y Decoración</h2>
+                <div class="divider"></div>
+                <p>Una muestra de nuestras creaciones más recientes y populares</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Torta Barbie -->
+                <div class="gallery-item">
+                    <img src="torta-barbie.jpg" alt="Torta personalizada de Barbie para Sarah Sofia 6 años">
+                    <div class="gallery-overlay"><h3>Mundo Barbie</h3></div>
+                </div>
+                <!-- Torta Cars -->
+                <div class="gallery-item">
+                    <img src="torta-cars.jpg" alt="Torta personalizada de Cars para Arthur 5 años">
+                    <div class="gallery-overlay"><h3>Velocidad Cars</h3></div>
+                </div>
+                <!-- Torta Gatitos / Bluey -->
+                <div class="gallery-item">
+                    <img src="torta-gatitos.jpg" alt="Torta personalizada de Bluey para Allessia 3 años">
+                    <div class="gallery-overlay"><h3>Bluey y sus Amigos</h3></div>
+                </div>
+                <!-- Torta Masha y el Oso -->
+                <div class="gallery-item">
+                    <img src="torta-masha.jpg" alt="Torta personalizada de Masha y el Oso para Aranza 2 años">
+                    <div class="gallery-overlay"><h3>Diversión con Masha</h3></div>
+                </div>
+                <!-- Torta Minnie -->
+                <div class="gallery-item">
+                    <img src="torta-minie.jpg" alt="Torta personalizada de Minnie Mouse para Itzayane 4 años">
+                    <div class="gallery-overlay"><h3>Clásica Minnie</h3></div>
+                </div>
+                <!-- Torta Spiderman -->
+                <div class="gallery-item">
+                    <img src="torta-spiderman.jpg" alt="Torta personalizada de Spiderman para Leonel 3 años">
+                    <div class="gallery-overlay"><h3>Héroe Spiderman</h3></div>
+                </div>
+                <!-- Torta Fútbol -->
+                <div class="gallery-item">
+                    <img src="torta-futbol.jpg" alt="Torta personalizada de Fútbol para Isaque 9 años">
+                    <div class="gallery-overlay"><h3>Pasión Futbolera</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Sabores a Elegir (Menú interactivo con CSS puro) -->
+    <section id="sabores" class="flavors section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Elige tu Sabor Favorito</h2>
+                <div class="divider"></div>
+                <p>Presiona el botón para descubrir nuestras deliciosas opciones de bizcocho y relleno</p>
+            </div>
+            
+            <div class="flavor-accordion">
+                <!-- Opción 1 -->
+                <div class="accordion-item">
+                    <input type="radio" name="flavor" id="flavor1" class="accordion-input">
+                    <label for="flavor1" class="accordion-label">
+                        Tres Leches
+                        <span class="icon">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Nuestra especialidad de la casa. Un bizcocho esponjoso bañado en nuestra mezcla secreta de tres leches, cubierto con crema batida ligera y un toque de canela. ¡Simplemente irresistible!</p>
+                    </div>
+                </div>
+                
+                <!-- Opción 2 -->
+                <div class="accordion-item">
+                    <input type="radio" name="flavor" id="flavor2" class="accordion-input">
+                    <label for="flavor2" class="accordion-label">
+                        Vainilla con Chocolate
+                        <span class="icon">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>La combinación clásica que nunca falla. Capas de suave bizcocho de vainilla real intercaladas con un rico y cremoso fudge de chocolate artesanal.</p>
+                    </div>
+                </div>
+                
+                <!-- Opción 3 -->
+                <div class="accordion-item">
+                    <input type="radio" name="flavor" id="flavor3" class="accordion-input">
+                    <label for="flavor3" class="accordion-label">
+                        Vainilla con tres leches
+                        <span class="icon">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Lo mejor de dos mundos. La base tradicional de vainilla con la humedad y dulzura característica de nuestro bañado de tres leches. Perfecto para quienes buscan un sabor familiar pero mejorado.</p>
+                    </div>
+                </div>
+                
+                <!-- Opción 4 -->
+                <div class="accordion-item">
+                    <input type="radio" name="flavor" id="flavor4" class="accordion-input">
+                    <label for="flavor4" class="accordion-label">
+                        Mixto de sabores
+                        <span class="icon">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>¿No puedes decidirte? ¡Pruébalos todos! Creamos una torta con capas alternadas de nuestros sabores más populares para una experiencia gustativa completa en cada bocado. (Vainilla, Chocolate, y toques de Tres Leches).</p>
+                    </div>
+                </div>
+                
+                <!-- Opción para cerrar (invisible, para cuando se presiona fuera) -->
+                <input type="radio" name="flavor" id="close-acc" class="accordion-close-input" checked>
+                <label for="close-acc" class="accordion-close-label">Cerrar Info</label>
+            </div>
+
+            <div class="text-center mt-40">
+                <a href="https://wa.me/59175895819?text=¡Hola!%20Me%20interesa%20una%20torta%20de%20sabor:%20..." target="_blank" class="btn btn-primary">Pedir mi Sabor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="quote-box">
+                <p class="quote">"Un toque de clavo y una pizca de canela tienen el poder mágico de transformar un simple postre en un recuerdo para toda la vida."</p>
+                <span class="author">— Recetas del Corazón</span>
+            </div>
+            <div class="footer-info">
+                <p class="brand">Clavo & Canela Repostería</p>
+                <p>© 2026 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/59175895819?text=¡Hola!%20Me%20gustaría%20obtener%20más%20información%20sobre%20sus%20tortas%20personalizadas." class="whatsapp-btn" target="_blank" aria-label="Contacto por WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.135-2.135c2.374 1.275 5.063 1.935 7.865 1.935 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.467 0-4.887-0.659-7.013-1.912l-0.503-0.297-5.213 1.367 1.39-5.183-0.327-0.52c-1.378-2.193-2.107-4.735-2.107-7.321 0-7.536 6.131-13.667 13.667-13.667s13.667 6.131 13.667 13.667c0 7.536-6.131 13.667-13.667 13.667zM22.56 19.387c-0.358-0.179-2.116-1.044-2.444-1.163s-0.567-0.179-0.806 0.179c-0.239 0.358-0.925 1.163-1.134 1.402s-0.418 0.269-0.776 0.090c-0.358-0.179-1.511-0.557-2.879-1.776-1.065-0.95-1.784-2.123-1.993-2.481s-0.022-0.551 0.157-0.729c0.161-0.16 0.358-0.418 0.537-0.627 0.179-0.209 0.239-0.358 0.358-0.597 0.119-0.239 0.060-0.448-0.030-0.627s-0.806-1.94-1.104-2.657c-0.291-0.697-0.587-0.603-0.806-0.614l-0.687-0.012c-0.239 0-0.627 0.090-0.955 0.448s-1.254 1.224-1.254 2.985 1.284 3.462 1.463 3.701c0.179 0.239 2.527 3.858 6.12 5.41 0.855 0.369 1.522 0.59 2.042 0.755 0.859 0.273 1.64 0.234 2.257 0.142 0.689-0.103 2.116-0.865 2.415-1.701 0.299-0.836 0.299-1.552 0.209-1.701s-0.328-0.239-0.687-0.418z"></path>
+        </svg>
+    </a>
+
+</body>
+</html>
